@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1758220437 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\main.c
+	<stdio.h>
+	<stdlib.h>
+	"libs\Cadenas.h"
+
+1758220420 c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\cadenas.h
+
+1758220409 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\cadenas.c
+	"Cadenas.h"
+

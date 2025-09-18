@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "libs\Cadenas.h"
 
 int main()
 {
-    printf("Hello world!\n");
+    printf("%d", es_palindromo("ARiba lA birra"));
+
     return 0;
 }
