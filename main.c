@@ -4,7 +4,7 @@
 
 int main()
 {
-    printf("%d", es_palindromo("ARiba lA birra"));
+    printf("a");
 
     return 0;
 }

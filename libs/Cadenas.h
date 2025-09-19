@@ -12,6 +12,7 @@ char* mistrrchr(char* cadena, int valor);
 char* mistrrchrStrlen(char* cadena, int valor);
 int es_palindromo(char* cadena);
 int es_letra(int x);
-
+int proxima_palabra(char * cadena, char**posIni);
+char ofuscar_caracter(char* regla,char caracter, int pos_caracter);
 
 #endif // CADENAS_H_INCLUDED

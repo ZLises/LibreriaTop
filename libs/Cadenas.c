@@ -147,11 +147,43 @@ int es_palindromo(char* cadena){
    return 1;
 }
 
+int proxima_palabra(char * cadena, char**posIni){
+    char*pivot = cadena;
+    int contador = 0;
+
+    if(*cadena=='\0'){
+        return 0;
+    }
+
+    while( es_letra(*pivot) == 0 ){
+        pivot++;
+    }
+    while(*pivot != '\0' && es_letra(*pivot) ){
+        contador++;
+        pivot++;
+    }
+
+    *posIni = pivot - (contador);
+
+    return contador;
+}
+//pequeño codigo que implementa la funcion proxima_palabra
+/*
+    char frase[] = "Aguante la birra senioras y seniores";
+    char*puntero = frase;
+    int i;
+    int resultado = proxima_palabra(frase,&puntero);
 
 
-
-
-
+    while(resultado != 0){
+        for(i=0;i<resultado;i++){
+            printf("%c", *puntero);
+            puntero++;
+        }
+        printf("\n");
+        resultado = proxima_palabra(puntero,&puntero);
+    }
+*/
 
 
 
