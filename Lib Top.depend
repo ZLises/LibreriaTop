@@ -1,11 +1,17 @@
 # depslib dependency file v1.0
-1758229071 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\main.c
+1758751652 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\main.c
 	<stdio.h>
 	<stdlib.h>
 	"libs\Cadenas.h"
+	"libs\Vectores.h"
 
 1758226759 c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\cadenas.h
 
-1758229061 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\cadenas.c
+1758243950 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\cadenas.c
 	"Cadenas.h"
+
+1758751674 c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\vectores.h
+
+1758751672 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\vectores.c
+	"Vectores.h"
 

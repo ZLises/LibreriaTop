@@ -35,6 +35,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="libs/Cadenas.h" />
+		<Unit filename="libs/Vectores.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libs/Vectores.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
