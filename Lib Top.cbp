@@ -31,6 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="libs/Algoritmos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libs/Algoritmos.h" />
 		<Unit filename="libs/Cadenas.c">
 			<Option compilerVar="CC" />
 		</Unit>

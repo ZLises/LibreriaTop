@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1758854922 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\main.c
+1758914184 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\main.c
 	<stdio.h>
 	<stdlib.h>
 	"libs\Cadenas.h"
 	"libs\Vectores.h"
 	"libs\Matrices.h"
+	"libs\Algoritmos.h"
 
 1758226759 c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\cadenas.h
 
@@ -26,4 +27,12 @@
 
 1758850579 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\matrices.c
 	"Matrices.h"
+
+1758913918 c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\algoritmos.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1758914590 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\algoritmos.c
+	"Algoritmos.h"
 
