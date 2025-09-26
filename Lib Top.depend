@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1758842373 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\main.c
+1758854922 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\main.c
 	<stdio.h>
 	<stdlib.h>
 	"libs\Cadenas.h"
@@ -11,16 +11,19 @@
 1758243950 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\cadenas.c
 	"Cadenas.h"
 
-1758834067 c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\vectores.h
-
-1758834121 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\vectores.c
-	"Vectores.h"
-
-1758841953 c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\matrices.h
+1758854893 c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\vectores.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1758842317 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\matrices.c
+1758854879 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\vectores.c
+	"Vectores.h"
+
+1758850587 c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\matrices.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1758850579 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\matrices.c
 	"Matrices.h"
 

@@ -52,6 +52,10 @@ void recorrer_matriz(void**matriz,unsigned filas, unsigned columnas,size_t tam_e
    }
 }
 
+void establecer_cero(void*a){
+  *(int*)a = 0;
+}
+
 void cargar_matriz (int ** mat, unsigned filas, unsigned columnas)
 {
     for(int i = 0; i <filas; i++){

@@ -12,4 +12,5 @@ void drop_matriz_dinamica(void**matriz, unsigned filas);
 void recorrer_matriz(void**matriz,unsigned filas, unsigned columnas,size_t tam_elementos, Accion accion);
 void cargar_matriz (int ** mat, unsigned filas, unsigned columnas);
 void mostrar_matriz(int ** mat, unsigned filas, unsigned columnas);
+void establecer_cero(void*a);
 #endif // MATRICES_H_INCLUDED

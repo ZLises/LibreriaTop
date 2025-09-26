@@ -5,17 +5,28 @@
 #include "libs\Matrices.h"
 #define TAM 5
 
-void establecer_cero(void*a){
-  *(int*)a = 0;
-}
-
 int main()
 {
-    int ** m;
-    m = (int**)crear_matriz_dinamica(3,3,sizeof(int));
-    //cargar_matriz(m,3,3);
-    recorrer_matriz((void**)m,3,3,sizeof(int),(Accion)establecer_cero);
-    mostrar_matriz(m,3,3);
-    drop_matriz_dinamica((void**)m,3);
+    gVector v;
+    int i;
+    int resultado = crear_vector_general(&v,1,sizeof(int));
+
+    if(resultado == ERROR){
+        printf("ERROR DE CREACION DE VECTOR");
+        return ERROR;
+    }
+
+    int numeros[] = {4,1,5,3,18,1,-1,-54,180,9000};
+    int*pnum = numeros;
+    int nt;
+
+    for(i=0;i< sizeof(numeros)/sizeof(int) ;i++){
+        insertar_ordenado_vector_general(&v,pnum,sizeof(int),comparar_enteros);
+        pnum++;
+    }
+
+    recorrer_vector_general(&v,sizeof(int),mostrar_enteros);
+    destruir_vector_general(&v);
+
     return 0;
 }
