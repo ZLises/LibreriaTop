@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#define TAM 5
 
 typedef struct{
    void*ini;
@@ -14,6 +15,7 @@ typedef struct{
 
 typedef int (*Cmp)(void*a,void*b);
 typedef void (*Accion)(void*m);
+typedef int (*Filtro)(void*valor);
 
 int insert_in_order(int*vec,int* ce,int tam_max,int valor);
 int drop_by_pos(int*vec,int pos, int* ce);
@@ -26,4 +28,9 @@ void recorrer_vector_general(gVector *v,size_t tam_elementos, Accion accion);
 
 int comparar_enteros(void*a,void*b);
 void mostrar_enteros(void*a);
+
+void mi_filter(void*vec, int*ce,size_t tam_elemento, Filtro filtro);
+int mi_swap(void*a,void*b,size_t tam_elemento);
+void* extremos_vector(void*vec,int*ce,size_t tam_elemento, Cmp cmp);
+void ssort(void*vec,int*ce,size_t tam_elemento,Cmp cmp);
 #endif // VECTORES_H_INCLUDED

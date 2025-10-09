@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1758914184 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\main.c
+1760038687 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\main.c
 	<stdio.h>
 	<stdlib.h>
 	"libs\Cadenas.h"
@@ -12,12 +12,12 @@
 1758243950 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\cadenas.c
 	"Cadenas.h"
 
-1758854893 c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\vectores.h
+1760038528 c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\vectores.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1758854879 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\vectores.c
+1760038946 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\vectores.c
 	"Vectores.h"
 
 1758850587 c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\matrices.h
@@ -28,11 +28,11 @@
 1758850579 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\matrices.c
 	"Matrices.h"
 
-1758913918 c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\algoritmos.h
+1758914748 c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\algoritmos.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1758914590 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\algoritmos.c
+1758914728 source:c:\users\ulaza\onedrive\escritorio\libreria topicos\lib top\libs\algoritmos.c
 	"Algoritmos.h"
 

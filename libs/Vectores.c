@@ -1,5 +1,73 @@
 #include "Vectores.h"
 
+void ssort(void*vec,int*ce,size_t tam_elemento,Cmp cmp){
+   void*ini = vec;
+   void*fin = vec + ( (*ce) * tam_elemento);
+   void*extremos;
+   int cantidad_elementos = *ce;
+
+   while(ini < fin){
+     extremos = extremos_vector(ini,&cantidad_elementos,tam_elemento,cmp);
+     mi_swap(ini,extremos,tam_elemento);
+     ini += tam_elemento;
+     cantidad_elementos--;
+   }
+}
+
+void* extremos_vector(void*vec,int*ce,size_t tam_elemento, Cmp cmp){
+  void*fin = vec + (*ce * tam_elemento);
+  void*pivot = vec;
+  void*ext;
+
+  if(*ce < 1){
+    return NULL;
+  }
+
+  ext = pivot;
+  pivot+=tam_elemento;
+
+  while(pivot < fin){
+     if(cmp(pivot,ext)>0){
+         ext = pivot;
+     }
+    pivot+=tam_elemento;
+  }
+
+  return ext;
+}
+
+int mi_swap(void*a,void*b,size_t tam_elemento){
+   void*aux = malloc(tam_elemento);
+   if(!aux){
+    return ERROR;
+   }
+
+   memcpy(aux,a,tam_elemento);
+   memcpy(a,b,tam_elemento);
+   memcpy(b,aux,tam_elemento);
+
+   free(aux);
+
+   return OK;
+}
+
+
+void mi_filter(void*vec, int*ce,size_t tam_elemento, Filtro filtro){
+    void*ini = vec;
+    void*fin = vec + (*ce * tam_elemento);
+    void*pivot = vec;
+
+    while(pivot < fin){
+      if(filtro(pivot) == OK){
+         memcpy(ini,pivot,tam_elemento);
+         ini+=tam_elemento;
+      }else{
+         (*ce)--;
+      }
+      pivot+=tam_elemento;
+    }
+}
+
 int crear_vector_general(gVector*v,unsigned tam, size_t tam_elementos){
 
    v->ini = malloc(tam*tam_elementos);
