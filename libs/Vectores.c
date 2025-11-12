@@ -1,5 +1,28 @@
 #include "Vectores.h"
+void* mi_busqueda(void*inicio,void*elemento, size_t tam_elemento,int ce,Cmp cmp){
 
+   int izq = 0;
+   int derecha = ce;
+   int medio;
+   void*ini = inicio;
+   int comparacion;
+   void*pmedio;
+
+   while(izq < derecha){
+     medio = izq + (derecha - izq)/2;
+     pmedio = ini + (medio)*tam_elemento;
+     comparacion = cmp(elemento,pmedio);
+     if(comparacion==0){
+        return pmedio;
+     }
+     if(comparacion<0){
+        derecha = medio;
+     }else{
+        izq = medio + 1;
+     }
+   }
+   return NULL;
+}
 void ssort(void*vec,int*ce,size_t tam_elemento,Cmp cmp){
    void*ini = vec;
    void*fin = vec + ( (*ce) * tam_elemento);
@@ -50,7 +73,6 @@ int mi_swap(void*a,void*b,size_t tam_elemento){
 
    return OK;
 }
-
 
 void mi_filter(void*vec, int*ce,size_t tam_elemento, Filtro filtro){
     void*ini = vec;

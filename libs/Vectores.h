@@ -33,4 +33,5 @@ void mi_filter(void*vec, int*ce,size_t tam_elemento, Filtro filtro);
 int mi_swap(void*a,void*b,size_t tam_elemento);
 void* extremos_vector(void*vec,int*ce,size_t tam_elemento, Cmp cmp);
 void ssort(void*vec,int*ce,size_t tam_elemento,Cmp cmp);
+void* mi_busqueda(void*inicio,void*elemento, size_t tam_elemento,int ce,Cmp cmp);
 #endif // VECTORES_H_INCLUDED
